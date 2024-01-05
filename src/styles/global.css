@@ -18,5 +18,7 @@ a {
 body {
   background: var(--light-blue);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }

@@ -1,8 +1,48 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro'
 ---
 
 <Layout title="Javier Piqueras Portfolio 👨🏻‍💻">
 	<main>
+		<section>
+			<img class="jp-photo" src="/jp-photo.jpg" alt="My Photo during summer 2022">
+			<h1>Hey, I'm Javier Piqueras 👨🏻‍💻
+				<Badge>Available</Badge>
+			</h1>
+			<h2>
+				+7 years of experience Software and Data Engineer. 
+				From Valencia, Spain 🇪🇸. 
+				Specialized in Web Application Developoment. 
+				Working as a IT Delivery Manager @ BNPP Paribas Personal Finance
+			</h2>
+		</section>
 	</main>
 </Layout>
+
+<style>
+	section {
+		width: 720px;
+		padding: 100px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	h1 {
+		margin: 0;
+		font-size: 3rem;
+		font-weight: bold;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 15px;
+	}
+	h2 {
+		margin: 0;
+		opacity: 80%;
+	}
+	.jp-photo {
+		width: 150px;
+		border-radius: 50%;
+	}
+</style>
