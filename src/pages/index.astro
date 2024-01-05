@@ -1,6 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro'
+import TwitterIcon from '../icons/TwitterIcon.astro'
+import LinkedinIcon from '../icons/LinkedinIcon.astro'
+import GithubIcon from '../icons/GithubIcon.astro'
+import SocialNetworkSite from '../components/SocialNetworkSite.astro'
+
+const twitterURL = 'https://twitter.com/javierpiquerasm'
+const gitHubURL = 'https://github.com/javierpiquerasmartinez'
+const linkedinURL = 'https://www.linkedin.com/in/javipiquerasm/'
 ---
 
 <Layout title="Javier Piqueras Portfolio 👨🏻‍💻">
@@ -11,11 +19,31 @@ import Badge from '../components/Badge.astro'
 				<Badge>Available</Badge>
 			</h1>
 			<h2>
-				+7 years of experience Software and Data Engineer. 
+				+7 years of experience <span class="jp-highlight">Software and Data Engineer</span>. 
 				From Valencia, Spain 🇪🇸. 
-				Specialized in Web Application Developoment. 
+				Specialized in <span class="jp-highlight">Web Application Developoment</span>. 
 				Working as a IT Delivery Manager @ BNPP Paribas Personal Finance
 			</h2>
+			<ul>
+				<li>
+					<SocialNetworkSite href={twitterURL}>
+						<TwitterIcon />
+						Twitter
+					</SocialNetworkSite>
+				</li>
+				<li>
+					<SocialNetworkSite href={linkedinURL}>
+						<LinkedinIcon />
+						LinkedIn
+					</SocialNetworkSite>
+				</li>
+				<li>
+					<SocialNetworkSite href={gitHubURL}>
+						<GithubIcon />
+						GitHub
+					</SocialNetworkSite>
+				</li>
+			</ul>
 		</section>
 	</main>
 </Layout>
@@ -40,9 +68,15 @@ import Badge from '../components/Badge.astro'
 	h2 {
 		margin: 0;
 		opacity: 80%;
+		font-weight: normal;
 	}
-	.jp-photo {
-		width: 150px;
-		border-radius: 50%;
+	ul {
+		display: flex;
+		gap: 10px;
+		flex-direction: row;
 	}
+	li {
+		font-size: medium;
+	}
+
 </style>

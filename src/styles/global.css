@@ -1,12 +1,3 @@
-:root {
-  --dark: #040D1A;
-  --light-dark: #14273E;
-  --blue: #456685;
-  --light-blue: #B4C4D5;
-  --light: #FCF8F6;
-  --padding-basic: 20px;
-}
-
 html {
   font-family: 'Onest Variable', system-ui, sans-serif;
   color: var(--light-dark);
@@ -21,4 +12,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
