@@ -4,14 +4,16 @@ import Badge from '../components/Badge.astro'
 import TwitterIcon from '../icons/TwitterIcon.astro'
 import LinkedinIcon from '../icons/LinkedinIcon.astro'
 import GithubIcon from '../icons/GithubIcon.astro'
+import EmailIcon from '../icons/EmailIcon.astro'
 import SocialNetworkSite from '../components/SocialNetworkSite.astro'
 
 const twitterURL = 'https://twitter.com/javierpiquerasm'
 const gitHubURL = 'https://github.com/javierpiquerasmartinez'
 const linkedinURL = 'https://www.linkedin.com/in/javipiquerasm/'
+const emailURL = 'mailto:javierpiquerasmartinez@gmail.com'
 ---
 
-<Layout title="Javier Piqueras Portfolio 👨🏻‍💻">
+<Layout title="Javier Piqueras Portfolio 👨🏻‍💻 - Web Application sogtware Engineer", description="TODO">
 	<main>
 		<section>
 			<img class="jp-photo" src="/jp-photo.jpg" alt="My Photo during summer 2022">
@@ -41,6 +43,12 @@ const linkedinURL = 'https://www.linkedin.com/in/javipiquerasm/'
 					<SocialNetworkSite href={gitHubURL}>
 						<GithubIcon />
 						GitHub
+					</SocialNetworkSite>
+				</li>
+				<li>
+					<SocialNetworkSite href={emailURL}>
+						<EmailIcon />
+						javierpiquerasmartinez@gmail.com
 					</SocialNetworkSite>
 				</li>
 			</ul>

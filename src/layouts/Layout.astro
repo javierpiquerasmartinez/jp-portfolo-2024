@@ -4,7 +4,7 @@ import '../styles/global.css'
 import '../styles/jp-styles.css'
 import '@fontsource-variable/onest';
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 const logoUrl = '/jp-logo.png'
 ---
 
@@ -12,7 +12,7 @@ const logoUrl = '/jp-logo.png'
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href={logoUrl} />
 		<meta name="generator" content={Astro.generator} />
