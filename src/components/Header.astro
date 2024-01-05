@@ -1,0 +1,30 @@
+---
+const jpLogoURL = '/jp-logo.png'
+---
+<header>
+  <img class="jp-logo" src={jpLogoURL} alt="Javier Piqeras Logo">
+  <nav class="jp-nav">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/projects">Projects</a>
+    <a href="/contact">Contact</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1120px;
+  }
+  .jp-logo {
+    width: 50px;
+  }
+  .jp-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+</style>
