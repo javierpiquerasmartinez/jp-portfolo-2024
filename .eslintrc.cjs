@@ -5,7 +5,14 @@ module.exports = {
   overrides: [
     {
       files: ['*.astro'],
-      parser: 'astro-eslint-parser',
+      parser: 'astro-eslint-parser'
+    },
+    {
+      files:['*.js'],
+      "parser": "babel-eslint",
+      "rules": {
+        "strict": 0
+      }
     }
   ]
 }
