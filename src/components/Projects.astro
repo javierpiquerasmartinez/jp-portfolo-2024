@@ -23,9 +23,15 @@ const PROJECTS = [
       <h3>{p.name}</h3>
       <div>{p.description}</div>
       <div>
-        GitHub: <a href={p.link}>{p.link}</a>
+        Project Repository: <a href={p.link}>{p.link}</a>
       </div>
       <img src={p.img} alt={p.description} />
     </>
   ))
 }
+
+<style>
+  a {
+    text-decoration: underline;
+  }
+</style>
