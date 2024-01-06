@@ -7,6 +7,7 @@ import GithubIcon from "../icons/GithubIcon.astro";
 import EmailIcon from "../icons/EmailIcon.astro";
 import SocialNetworkSite from "../components/SocialNetworkSite.astro";
 import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 
 const twitterURL = "https://twitter.com/javierpiquerasm";
 const gitHubURL = "https://github.com/javierpiquerasmartinez";
@@ -21,7 +22,7 @@ const description =
 
 <Layout title={title} description={description}>
 	<main>
-		<section>
+		<SectionContainer>
 			<img
 				class="jp-photo"
 				src="/jp-photo.jpg"
@@ -67,14 +68,14 @@ const description =
 					</SocialNetworkSite>
 				</li>
 			</ul>
-		</section>
-		<section>
+		</SectionContainer>
+		<SectionContainer>
 			<h2>About</h2>
 			<Experience />
-		</section>
-		<section>
+		</SectionContainer>
+		<SectionContainer>
 			<h2>Projects</h2>
-		</section>
+		</SectionContainer>
 	</main>
 </Layout>
 
@@ -84,14 +85,6 @@ const description =
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-	}
-	section {
-		width: 1000px;
-		max-width: 100%;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		padding-top: 50px;
 	}
 	h1 {
 		margin: 0;
