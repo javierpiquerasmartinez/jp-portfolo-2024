@@ -29,9 +29,9 @@ const description =
 			/>
 			<h1>
 				Hi, I'm Javier Piqueras 👨🏻‍💻
-				<Badge>Available</Badge>
+				<!-- <Badge>Available</Badge> -->
 			</h1>
-			<h2>
+			<h3>
 				<div>
 					+7 years of experience
 					<span class="jp-highlight"> Software and Data Engineer</span>
@@ -40,7 +40,7 @@ const description =
 					. Working as IT Delivery Manager @ BNP Paribas PF.
 				</div>
 				<div>From Valencia, Spain 🇪🇸.</div>
-			</h2>
+			</h3>
 			<ul>
 				<li>
 					<SocialNetworkSite href={twitterURL}>
@@ -69,7 +69,11 @@ const description =
 			</ul>
 		</section>
 		<section>
+			<h2>About</h2>
 			<Experience />
+		</section>
+		<section>
+			<h2>Projects</h2>
 		</section>
 	</main>
 </Layout>
@@ -99,11 +103,13 @@ const description =
 		gap: 15px;
 		flex-wrap: wrap;
 	}
-	h2 {
+	h3 {
 		margin: 0;
 		opacity: 80%;
 		font-weight: normal;
+		font-size: 1.5rem;
 	}
+
 	ul {
 		display: flex;
 		gap: 10px;
