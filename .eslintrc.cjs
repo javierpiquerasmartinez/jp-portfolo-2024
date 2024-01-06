@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
-    "plugin:astro/recommended",
+    'plugin:astro/recommended',
   ],
   overrides: [
     {
-      files: ["*.astro"],
-      parser: "astro-eslint-parser",
+      files: ['*.astro'],
+      parser: 'astro-eslint-parser',
     }
   ]
 }
