@@ -1,18 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import TwitterIcon from "../icons/TwitterIcon.astro";
-import LinkedinIcon from "../icons/LinkedinIcon.astro";
-import GithubIcon from "../icons/GithubIcon.astro";
-import EmailIcon from "../icons/EmailIcon.astro";
-import SocialNetworkSite from "../components/SocialNetworkSite.astro";
+
 import Experience from "../components/Experience.astro";
 import SectionContainer from "../components/SectionContainer.astro";
-
-const twitterURL = "https://twitter.com/javierpiquerasm";
-const gitHubURL = "https://github.com/javierpiquerasmartinez";
-const linkedinURL = "https://www.linkedin.com/in/javipiquerasm/";
-const emailURL = "mailto:javierpiquerasmartinez@gmail.com";
+import Intro from "../components/Intro.astro";
 
 const title =
 	"Javier Piqueras Portfolio 👨🏻‍💻 - Web Application Software Engineer";
@@ -23,58 +14,17 @@ const description =
 <Layout title={title} description={description}>
 	<main>
 		<SectionContainer>
-			<img
-				class="jp-photo"
-				src="/jp-photo.jpg"
-				alt="My Photo during summer 2022"
-			/>
-			<h1>
-				Hi, I'm Javier Piqueras 👨🏻‍💻
-				<!-- <Badge>Available</Badge> -->
-			</h1>
-			<h3>
-				<div>
-					+7 years of experience
-					<span class="jp-highlight"> Software and Data Engineer</span>
-					. Specialized in
-					<span class="jp-highlight"> Web Application Developoment</span>
-					. Working as IT Delivery Manager @ BNP Paribas PF.
-				</div>
-				<div>From Valencia, Spain 🇪🇸.</div>
-			</h3>
-			<ul>
-				<li>
-					<SocialNetworkSite href={twitterURL}>
-						<TwitterIcon />
-						Twitter
-					</SocialNetworkSite>
-				</li>
-				<li>
-					<SocialNetworkSite href={linkedinURL}>
-						<LinkedinIcon />
-						LinkedIn
-					</SocialNetworkSite>
-				</li>
-				<li>
-					<SocialNetworkSite href={gitHubURL}>
-						<GithubIcon />
-						GitHub
-					</SocialNetworkSite>
-				</li>
-				<li>
-					<SocialNetworkSite href={emailURL}>
-						<EmailIcon />
-						javierpiquerasmartinez@gmail.com
-					</SocialNetworkSite>
-				</li>
-			</ul>
+			<Intro />
 		</SectionContainer>
-		<SectionContainer>
+		<SectionContainer id="about">
 			<h2>About</h2>
 			<Experience />
 		</SectionContainer>
-		<SectionContainer>
+		<SectionContainer id="projects">
 			<h2>Projects</h2>
+		</SectionContainer>
+		<SectionContainer id="contact">
+			<h2>Contact</h2>
 		</SectionContainer>
 	</main>
 </Layout>
@@ -85,31 +35,5 @@ const description =
 		flex-direction: column;
 		align-items: center;
 		width: 100%;
-	}
-	h1 {
-		margin: 0;
-		font-size: 3rem;
-		font-weight: bold;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		gap: 15px;
-		flex-wrap: wrap;
-	}
-	h3 {
-		margin: 0;
-		opacity: 80%;
-		font-weight: normal;
-		font-size: 1.5rem;
-	}
-
-	ul {
-		display: flex;
-		gap: 10px;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	li {
-		font-size: medium;
 	}
 </style>
