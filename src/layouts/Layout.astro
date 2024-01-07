@@ -1,11 +1,12 @@
 ---
-import Header from '../components/Header.astro';
-import '../styles/global.css'
-import '../styles/jp-styles.css'
-import '@fontsource-variable/onest';
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import "../styles/jp-styles.css";
+import "@fontsource-variable/onest";
 
 const { title, description } = Astro.props;
-const logoUrl = '/jp-logo.png'
+const logoUrl = "/jp-logo.png";
 ---
 
 <!doctype html>
@@ -21,5 +22,6 @@ const logoUrl = '/jp-logo.png'
 	<body>
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
