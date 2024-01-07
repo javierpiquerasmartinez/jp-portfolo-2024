@@ -1,3 +1,5 @@
+import { TAGS } from './tags';
+
 export const PROJECTS = [
     {
       name: "Deno KV Realtime Visits",
@@ -6,7 +8,7 @@ export const PROJECTS = [
       img: "/denoKV.png",
       github: "https://github.com/javierpiquerasmartinez/deno-realtime-visits",
       link: "",
-      tags: ["NodeJS", "HTML5", "CSS3", "JavaScript", "Deno"],
+      tags: [ TAGS.JAVASCRIPT, TAGS.HTML5, TAGS.CSS, TAGS.DENO ]
     },
     {
       name: "AdventJS 2023",
@@ -15,6 +17,6 @@ export const PROJECTS = [
       img: "https://github.com/javierpiquerasmartinez/adventjs-2023/raw/main/static/adventjs-logo.png",
       github: "https://github.com/javierpiquerasmartinez/adventjs-2023",
       link: "",
-      tags: ["NodeJS", "JavaScript"], 
+      tags: [ TAGS.JAVASCRIPT, TAGS.NODEJS ]
     },
 ];
