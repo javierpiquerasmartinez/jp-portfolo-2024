@@ -11,9 +11,9 @@ import { PROJECTS } from "../contants/projects";
         Project Repository: <a href={p.github}>{p.github}</a>
       </div>
       <ul>
-        {p.tags.map((tagComponent) => (
+        {p.tags.map((tag) => (
           <li>
-            <tagComponent.icon color={tagComponent.color} />
+            <tag.icon color={tag.color} />
           </li>
         ))}
       </ul>
