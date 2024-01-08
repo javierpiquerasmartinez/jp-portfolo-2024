@@ -55,7 +55,7 @@ h2 {
 h3 {
   margin: 0;
   opacity: 80%;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1.5rem;
   color: var(--dark);
 }
