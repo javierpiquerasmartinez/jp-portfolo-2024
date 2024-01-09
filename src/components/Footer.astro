@@ -1,14 +1,18 @@
 ---
-const jpLogoURL = "/jp-logo.png";
+import { version } from "./../../package.json";
+const footerText = "Javier Piqueras Martinez - 2024";
 ---
 
 <footer>
-  <div>Javier Piqueras Martinez - 2024</div>
+  <div>{footerText}</div>
+  <div>Version: {version}</div>
 </footer>
 
 <style>
   footer {
+    color: var(--blue);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 1120px;
