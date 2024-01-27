@@ -1,0 +1,24 @@
+---
+import { STUDIES } from "../constants/studies";
+---
+
+{
+  STUDIES.map((s) => (
+    <>
+      <div>
+        <h3>{s.title}</h3> <h4>{s.date}</h4>
+      </div>
+      <h4>{s.institution}</h4>
+    </>
+  ))
+}
+
+<style>
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+</style>
