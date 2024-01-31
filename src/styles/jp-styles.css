@@ -1,12 +1,5 @@
 :root {
-  --dark: #040D1A;
-  --light-dark: #14273E;
-  --blue: #456685;
-  --light-blue: #B4C4D5;
-  --light: #FCF8F6;
-  --padding-basic: 20px;
-
-  --tr-70-light: #B3FCF8F6;
+  --background: #FCF8F6;
 }
 
 .jp-photo {

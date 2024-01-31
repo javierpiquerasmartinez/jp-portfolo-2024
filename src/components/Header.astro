@@ -1,5 +1,4 @@
 ---
-import BurgerButton from "./BurgerButton.astro";
 const jpLogoURL = "/jp-logo.png";
 ---
 
@@ -7,12 +6,9 @@ const jpLogoURL = "/jp-logo.png";
   <a href="#top">
     <img class="jp-logo" src={jpLogoURL} alt="Javier Piqeras Logo" />
   </a>
-  <!-- BurgerButton -->
-  <!--   <div class="jp-burger-btn">
-    <BurgerButton />
-  </div> -->
   <nav class="jp-nav">
     <a href="#top">Home</a>
+    <a href="#aboutme">About Me</a>
     <a href="#experience">Experience</a>
     <a href="#studies">Studies</a>
     <a href="#contact">Contact</a>
@@ -26,6 +22,8 @@ const jpLogoURL = "/jp-logo.png";
     align-items: center;
     width: 1120px;
     max-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .jp-logo {
     width: 50px;
@@ -35,16 +33,7 @@ const jpLogoURL = "/jp-logo.png";
     flex-direction: row;
     gap: 40px;
   }
-  .jp-burger-btn {
-    display: none;
+  a {
+    color: #000;
   }
-  /* To develop for the burger button */
-  /*   @media (max-width: 40rem) {
-    .jp-burger-btn {
-      display: block;
-    }
-    .jp-nav {
-      display: none;
-    }
-  } */
 </style>
