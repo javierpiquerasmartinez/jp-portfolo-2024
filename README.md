@@ -2,6 +2,7 @@
 
 ![Portfolio Screenshot on browser's view mode](/public/screenshot.png)
 
+
 ## 🧞 Installation
 
 All commands are run from the root of the project, from a terminal:
