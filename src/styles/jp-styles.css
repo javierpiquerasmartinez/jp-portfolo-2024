@@ -16,3 +16,9 @@
 .jp-intro {
   background: var(--intro-background);
 }
+
+@media (max-width: 767px) {
+  .jp-flex-row {
+    flex-direction: column;
+  }
+}
