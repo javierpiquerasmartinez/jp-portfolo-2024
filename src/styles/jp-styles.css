@@ -1,12 +1,18 @@
 :root {
   --background: #FCF8F6;
+  --intro-background: #E7F2FF;
 }
 
-.jp-photo {
-  width: 150px;
-  border-radius: 50%;
+.jp-flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
-.jp-highlight {
-  font-weight: 600;
+.jp-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.jp-intro {
+  background: var(--intro-background);
 }

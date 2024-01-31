@@ -10,59 +10,11 @@ const gitHubURL = "https://github.com/javierpiquerasmartinez";
 const linkedinURL = "https://www.linkedin.com/in/javipiquerasm/";
 const emailURL = "mailto:javierpiquerasmartinez@gmail.com";
 
-const photoUrl = "/jp-photo-2.jpg";
+const photoUrl = "/jp-photo-backgroundless.png";
+const ellipseUrl = "/Ellipse.svg";
 ---
 
-<img class="jp-photo" src={photoUrl} alt="My Photo during summer 2022" />
-<h1>
-  Hi, I'm Javier Piqueras 👨🏻‍💻
-  <!-- <Badge>Available</Badge> -->
-</h1>
-<h3>
-  <div>
-    +7 years of experience
-    <span class="jp-highlight"> Software and Data Engineer</span>
-    . Specialized in
-    <span class="jp-highlight"> Web Application Developoment</span>
-    . Working as IT Delivery Manager @ BNP Paribas PF.
-  </div>
-  <div>From Valencia, Spain 🇪🇸.</div>
-</h3>
-<ul>
-  <li>
-    <SocialNetworkSite href={twitterURL}>
-      <TwitterIcon />
-      Twitter
-    </SocialNetworkSite>
-  </li>
-  <li>
-    <SocialNetworkSite href={linkedinURL}>
-      <LinkedinIcon />
-      LinkedIn
-    </SocialNetworkSite>
-  </li>
-  <li>
-    <SocialNetworkSite href={gitHubURL}>
-      <GithubIcon />
-      GitHub
-    </SocialNetworkSite>
-  </li>
-  <li>
-    <SocialNetworkSite href={emailURL}>
-      <EmailIcon />
-      javierpiquerasmartinez@gmail.com
-    </SocialNetworkSite>
-  </li>
-</ul>
+<h1>Hi, I'm Javier Piqueras 👨🏻‍💻</h1>
+<div class="jp-photo-container">photo container</div>
 
-<style>
-  ul {
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  li {
-    font-size: medium;
-  }
-</style>
+<style></style>
