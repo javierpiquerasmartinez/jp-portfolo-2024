@@ -1,5 +1,6 @@
 :root {
-  --background: #FCF8F6;
+  /* --background: #FCF8F6; */
+  --background: #FFFFFF;
   --intro-background: #E7F2FF;
 }
 
@@ -11,6 +12,22 @@
 .jp-flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.jp-font-light {
+  font-weight: 200;
+}
+
+.jp-font-heavy {
+  font-weight: 800;
+}
+
+.jp-font-spaced {
+  letter-spacing: .2rem;
+}
+
+.jp-font-size-medium {
+  font-size: 1.1em;
 }
 
 .jp-intro {

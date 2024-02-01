@@ -1,10 +1,4 @@
 ---
-import TwitterIcon from "../icons/TwitterIcon.astro";
-import LinkedinIcon from "../icons/LinkedinIcon.astro";
-import GithubIcon from "../icons/GithubIcon.astro";
-import EmailIcon from "../icons/EmailIcon.astro";
-import SocialNetworkSite from "../components/SocialNetworkSite.astro";
-
 const twitterURL = "https://twitter.com/javierpiquerasm";
 const gitHubURL = "https://github.com/javierpiquerasmartinez";
 const linkedinURL = "https://www.linkedin.com/in/javipiquerasm/";
@@ -14,16 +8,17 @@ const photoUrl = "/jp-photo-backgroundless.png";
 const ellipseUrl = "/Ellipse.svg";
 ---
 
-<article>
-  <div>WELCOME</div>
-  <h1>Hi, I'm Javier Piqueras 👨🏻‍💻</h1>
-  <div>
-    +7 years of experience Software and Data Engineer . Specialized in Web
-    Application Developoment . Working as IT Delivery Manager @ BNP Paribas PF.
+<article class="jp-subsection jp-intro">
+  <div class="jp-font-light jp-font-spaced">WELCOME</div>
+  <h1 class="jp-font-heavy">Hi, I'm Javier Piqueras 👨🏻‍💻</h1>
+  <div class="jp-font-size-medium">
+    +7 years of experience Software and Data Engineer. <br />
+    Specialized in Web Application Developoment. <br />
+    Working as IT Delivery Manager @ BNP Paribas PF. <br />
     From Valencia, Spain 🇪🇸.
   </div>
 </article>
-<div class="jp-photo-container">
+<div class="jp-subsection jp-photo">
   <img
     src="/jp-photo-backgroundless.png"
     alt="A Professional Photo of Javier Piqueras"
@@ -31,13 +26,20 @@ const ellipseUrl = "/Ellipse.svg";
 </div>
 
 <style>
-  article {
+  .jp-subsection {
     width: 50%;
+    padding: 50px;
   }
-  .jp-photo-container {
-    width: 50%;
+  .jp-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .jp-photo {
+    display: flex;
+    justify-content: center;
   }
   img {
-    width: 100%;
+    width: 250px;
   }
 </style>
