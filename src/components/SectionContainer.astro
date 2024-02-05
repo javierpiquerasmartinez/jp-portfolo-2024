@@ -1,12 +1,20 @@
 ---
-const { class: className, ...rest } = Astro.props;
+const { class: className, background: background, ...rest } = Astro.props;
 ---
 
-<section class={className} {...rest}>
-  <slot />
-</section>
+<div class={background}>
+  <section class={className} {...rest}>
+    <slot />
+  </section>
+</div>
 
 <style>
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   section {
     width: 1120px;
     gap: 20px;
