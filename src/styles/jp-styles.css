@@ -53,3 +53,11 @@
     flex-direction: column;
   }
 }
+
+.jp-svg-hover:hover svg {
+  transform: rotateY(360deg);
+}
+
+svg {
+  transition: all 0.65s;
+}

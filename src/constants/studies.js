@@ -1,6 +1,6 @@
 export const STUDIES = [
   {
-    title: 'Computer Engineering Degreee',
+    title: 'Computer and Software Engineering Degree',
     institution: 'UPV - Universidad Politècnica de València',
     date: '2013-2017'
   },

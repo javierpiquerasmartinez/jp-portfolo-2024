@@ -3,8 +3,8 @@ const { title, description } = Astro.props;
 const IconComponent = Astro.props.icon;
 ---
 
-<article>
-  <IconComponent color="#456685" />
+<article class="jp-svg-hover">
+  <IconComponent color="#456685" class="icon" />
   <h3>
     {title}
   </h3>
@@ -18,5 +18,15 @@ const IconComponent = Astro.props.icon;
     border: 1px solid #dadada;
     border-radius: 10px;
     padding: 15px;
+    transition: all 0.25s;
+  }
+
+  article:hover {
+    background: var(--highlighted-background);
+    color: white;
+  }
+
+  article:hover div {
+    color: white;
   }
 </style>
