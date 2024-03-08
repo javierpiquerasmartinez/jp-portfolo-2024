@@ -4,6 +4,7 @@
 
 ## TODO
 - [ ] Change logo to SVG and optimize
+- [ ] Relative paths
 
 ## 🧞 Installation
 
