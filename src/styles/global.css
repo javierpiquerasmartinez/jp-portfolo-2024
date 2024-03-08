@@ -26,10 +26,6 @@ h2 {
   font-size: 2.5em;
 }
 
-h3 {
-  margin: 0;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
