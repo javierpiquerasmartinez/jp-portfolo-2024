@@ -56,7 +56,6 @@
 
 .jp-svg-hover:hover svg {
   transform: rotateY(360deg);
-  fill: white;
 }
 
 svg {
