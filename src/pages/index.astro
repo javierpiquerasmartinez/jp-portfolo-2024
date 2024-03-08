@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 
 import SectionContainer from "../components/SectionContainer.astro";
 import Intro from "../components/Intro.astro";
+import Job from "../components/Job.astro";
 
 const title =
 	"Javier Piqueras Portfolio 👨🏻‍💻 - FullStack JavaScript Web Application Software Engineer";
@@ -15,6 +16,9 @@ const description =
 		<SectionContainer id="home" class="jp-flex-row" background="jp-intro">
 			<Intro />
 		</SectionContainer>
+		<SectionContainer id="home" class="jp-flex-column">
+			<Job />
+		</SectionContainer>
 	</main>
 </Layout>
 
@@ -24,7 +28,6 @@ const description =
 		flex-direction: column;
 		align-items: center;
 		max-width: 100%;
-		gap: 50px;
 		width: 100%;
 	}
 </style>
