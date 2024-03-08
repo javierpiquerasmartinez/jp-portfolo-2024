@@ -1,7 +1,13 @@
 :root {
   /* --background: #FCF8F6; */
   --background: #FFFFFF;
+  --highlighted-background: #456685;
   --intro-background: #E7F2FF;
+}
+
+.jp-highlighted {
+  background: var(--highlighted-background);
+  color: #FFFFFF;
 }
 
 .jp-flex-column {
