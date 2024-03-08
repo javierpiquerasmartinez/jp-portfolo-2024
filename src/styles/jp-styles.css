@@ -3,6 +3,7 @@
   --background: #FFFFFF;
   --highlighted-background: #456685;
   --intro-background: #E7F2FF;
+  --text-color: #6E6E6E;
 }
 
 .jp-highlighted {
@@ -10,6 +11,10 @@
   color: #FFFFFF;
   padding: 0px 5px;
   border-radius: 15px;
+}
+
+.jp-regular-color {
+  color: var(--text-color)
 }
 
 .jp-flex-column {
@@ -36,6 +41,7 @@
 
 .jp-font-size-medium {
   font-size: 1.1em;
+  line-height: 32px;
 }
 
 .jp-intro {
