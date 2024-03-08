@@ -3,6 +3,7 @@ import JobCard from "../components/JobCard.astro";
 import DeliveryIcon from "../components/icons/DeliveryIcon.astro";
 import DataIcon from "../components/icons/DataIcon.astro";
 import DevelopmentIcon from "../components/icons/DevelopmentIcon.astro";
+import SectionTitle from "../components/SectionTitle.astro";
 
 const SERVICES = [
   {
@@ -26,7 +27,7 @@ const SERVICES = [
 ---
 
 <article>
-  <h2>What I Do</h2>
+  <SectionTitle>What I Do</SectionTitle>
   <div class="jp-font-size-medium jp-regular-color">
     I am responsible for overseeing the successful execution of IT projects
     within an organization coordinating various teams, resources, and timelines
@@ -54,20 +55,6 @@ const SERVICES = [
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  h2 {
-    position: relative;
-  }
-  h2::after {
-    content: "";
-    width: 70%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    border-bottom: 5px solid var(--highlighted-background);
   }
   div {
     text-align: center;

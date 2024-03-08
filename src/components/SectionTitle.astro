@@ -1,0 +1,24 @@
+---
+
+---
+
+<h2>
+  <slot />
+</h2>
+
+<style>
+  h2 {
+    position: relative;
+  }
+  h2::after {
+    content: "";
+    width: 70%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    border-bottom: 5px solid var(--highlighted-background);
+  }
+</style>
