@@ -8,7 +8,7 @@ const IconComponent = Astro.props.icon;
   <h3>
     {title}
   </h3>
-  <div class="jp-regular-color">
+  <div class="jp-regular-color jp-font-size-medium">
     {description}
   </div>
 </article>
@@ -28,5 +28,9 @@ const IconComponent = Astro.props.icon;
 
   article:hover div {
     color: white;
+  }
+
+  div {
+    text-wrap: pretty;
   }
 </style>
