@@ -2,6 +2,8 @@
 
 ![Portfolio Screenshot on browser's view mode](/public/screenshot.png)
 
+## TODO
+- [ ] Change logo to SVG and optimize
 
 ## 🧞 Installation
 
