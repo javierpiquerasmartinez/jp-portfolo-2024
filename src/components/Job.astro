@@ -1,5 +1,28 @@
 ---
+import JobCard from "../components/JobCard.astro";
+import DeliveryIcon from "../components/icons/DeliveryIcon.astro";
+import DataIcon from "../components/icons/DataIcon.astro";
+import DevelopmentIcon from "../components/icons/DevelopmentIcon.astro";
 
+const SERVICES = [
+  {
+    name: "Web Development",
+    description:
+      "I am responsible for overseeing the successful execution of IT projects within an organization coordinating various teams, ",
+    icon: DevelopmentIcon,
+  },
+  {
+    name: "IT Delivery Management",
+    description:
+      "I am responsible for overseeing the successful execution of IT projects within an organization coordinating various teams, resources, and timelines to ensure that projects are completed on time, within budget",
+    icon: DeliveryIcon,
+  },
+  {
+    name: "Data Engineering",
+    description: "I am responsible for overseeing the successful execution of ",
+    icon: DataIcon,
+  },
+];
 ---
 
 <article>
@@ -12,6 +35,17 @@
     requirements, establish goals, and manage expectations. Additionally, I
     monitor progress, identify risks and issues, and implement strategies to
     mitigate them.
+  </div>
+  <div class="jp-job-carrousel">
+    {
+      SERVICES.map((service) => (
+        <JobCard
+          title={service.name}
+          description={service.description}
+          icon={service.icon}
+        />
+      ))
+    }
   </div>
 </article>
 
@@ -38,5 +72,11 @@
   div {
     text-align: center;
     max-width: 818px;
+  }
+  .jp-job-carrousel {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
   }
 </style>
