@@ -1,12 +1,14 @@
 ---
 const { title, description } = Astro.props;
+const IconComponent = Astro.props.icon;
 ---
 
 <article>
+  <IconComponent color="#456685" />
   <h3>
     {title}
   </h3>
-  <div>
+  <div class="jp-regular-color">
     {description}
   </div>
 </article>
@@ -15,5 +17,6 @@ const { title, description } = Astro.props;
   article {
     border: 1px solid #dadada;
     border-radius: 10px;
+    padding: 15px;
   }
 </style>
