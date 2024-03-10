@@ -9,6 +9,7 @@
 - [ ] Change description
 - [ ] Change colors to hex and use css variables
 - [ ] ContactForm Functionality
+- [ ] Hover in Studies Cards effect
 
 ## 🧞 Installation
 
