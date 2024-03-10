@@ -1,0 +1,42 @@
+---
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<div class="jp-card">
+  <aside>
+    <h2>Get in touch with me</h2>
+    <section>
+      <div>Find me at</div>
+      <div>Valencia, Spain</div>
+      <div>------------------</div>
+      <div>Reach me out at</div>
+      <div>javipiquerasm@gmail.com</div>
+      <div>655 601 562</div>
+    </section>
+  </aside>
+  <div class="jp-contactform">
+    <ContactForm />
+  </div>
+</div>
+
+<style>
+  .jp-card {
+    background: #456685;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 47px 36px;
+    box-sizing: border-box;
+  }
+  h2 {
+    color: white;
+    margin: 0px;
+  }
+  section {
+    color: white;
+  }
+  .jp-contactform {
+    width: 100%;
+  }
+</style>
