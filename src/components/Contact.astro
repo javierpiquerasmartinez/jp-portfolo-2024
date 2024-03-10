@@ -1,17 +1,22 @@
 ---
 import ContactForm from "../components/ContactForm.astro";
+import PinIcon from "./icons/PinIcon.astro";
+import EmailIcon from "./icons/EmailIcon.astro";
+import PhoneIcon from "./icons/PhoneIcon.astro";
 ---
 
 <div class="jp-card">
   <aside>
-    <h2>Get in touch with me</h2>
+    <h2>Get in touch with me.</h2>
     <section>
       <div>Find me at</div>
-      <div>Valencia, Spain</div>
+      <div class="jp-iconcontactcontainer"><PinIcon /> Valencia, Spain</div>
       <div>------------------</div>
       <div>Reach me out at</div>
-      <div>javipiquerasm@gmail.com</div>
-      <div>655 601 562</div>
+      <div class="jp-iconcontactcontainer">
+        <EmailIcon />javipiquerasm@gmail.com
+      </div>
+      <div class="jp-iconcontactcontainer"><PhoneIcon />+34 655 601 562</div>
     </section>
   </aside>
   <div class="jp-contactform">
@@ -35,8 +40,22 @@ import ContactForm from "../components/ContactForm.astro";
   }
   section {
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: 200;
   }
   .jp-contactform {
     width: 100%;
+  }
+  .jp-iconcontactcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 </style>
