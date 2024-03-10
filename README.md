@@ -5,6 +5,8 @@
 ## TODO
 - [ ] Change logo to SVG and optimize
 - [ ] Relative paths
+- [ ] Add blur bottom of the photo
+- [ ] Change description
 
 ## 🧞 Installation
 
