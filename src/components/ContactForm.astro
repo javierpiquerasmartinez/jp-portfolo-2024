@@ -1,0 +1,81 @@
+---
+
+---
+
+<section>
+  <h4>Contact Me</h4>
+  <div>
+    <input class="jp-inputfield" type="text" placeholder="Your name" />
+    <input class="jp-inputfield" type="text" placeholder="Your address" />
+  </div>
+  <textarea
+    class="jp-inputfield"
+    name="message"
+    id="message"
+    cols="30"
+    rows="10"
+    placeholder="Your message"></textarea>
+  <div class="jp-checkbox-container">
+    <input type="checkbox" />I agree to the privacy policy
+  </div>
+  <button type="submit">Submit</button>
+</section>
+
+<style>
+  section {
+    background: white;
+    border-radius: 30px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #8c959f;
+  }
+  h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .jp-inputfield {
+    all: unset;
+    width: 100%;
+    padding: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    height: 60px;
+  }
+  .jp-checkbox-container {
+    gap: 15px;
+  }
+  button {
+    background: #456685;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  button:active {
+    background: #2a3f53;
+  }
+  @media (max-width: 767px) {
+    div {
+      flex-direction: column;
+    }
+    .jp-checkbox-container {
+      flex-direction: row;
+    }
+  }
+</style>

@@ -1,0 +1,79 @@
+---
+import ContactForm from "../components/ContactForm.astro";
+import PinIcon from "./icons/PinIcon.astro";
+import EmailIcon from "./icons/EmailIcon.astro";
+import PhoneIcon from "./icons/PhoneIcon.astro";
+---
+
+<div class="jp-card">
+  <aside>
+    <h2>Get in touch with me.</h2>
+    <section>
+      <div>Find me at</div>
+      <div class="jp-iconcontactcontainer"><PinIcon /> Valencia, Spain</div>
+      <div>------------------</div>
+      <div>Reach me out at</div>
+      <div class="jp-iconcontactcontainer">
+        <EmailIcon />javierpiquerasmartinez@gmail.com
+      </div>
+      <div class="jp-iconcontactcontainer"><PhoneIcon />+34 655 601 562</div>
+    </section>
+  </aside>
+  <div class="jp-contactform">
+    <ContactForm />
+  </div>
+</div>
+
+<style>
+  .jp-card {
+    background: #456685;
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    padding: 47px 36px;
+    box-sizing: border-box;
+  }
+  h2 {
+    color: white;
+    margin: 0px;
+  }
+  section {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: 200;
+  }
+  .jp-contactform {
+    width: 100%;
+  }
+  .jp-iconcontactcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+  }
+  @media (max-width: 880px) {
+    .jp-card {
+      flex-direction: column;
+      gap: 30px;
+      padding: 10px;
+    }
+    section {
+      gap: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .jp-iconcontactcontainer {
+      font-size: 10px;
+    }
+  }
+</style>
