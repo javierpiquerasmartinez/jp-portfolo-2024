@@ -5,7 +5,7 @@
 ## TODO
 - [ ] Change logo to SVG and optimize
 - [ ] Relative paths
-- [ ] Add blur bottom of the photo
+- [x] Add blur bottom of the photo
 - [ ] Change description
 - [ ] Change colors to hex and use css variables
 - [ ] ContactForm Functionality
