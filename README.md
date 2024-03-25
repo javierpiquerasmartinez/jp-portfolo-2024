@@ -10,6 +10,11 @@
 - [ ] Change colors to hex and use css variables
 - [ ] ContactForm Functionality
 - [ ] Hover in Studies Cards effect
+- [ ] Fill AboutMe section
+- [ ] Include Arrow in AboutMe section
+- [ ] Border curved in AboutMe section
+- [ ] Experience section
+
 
 ## 🧞 Installation
 
