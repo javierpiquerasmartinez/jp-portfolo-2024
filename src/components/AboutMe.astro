@@ -1,9 +1,9 @@
----
-import Arrow from "./../components/icons/Arrow.astro";
----
-
-<div></div>
-<article>
+<aside class="jp-subsection">
+  <div>
+    <img src="/jp-working.jpg" alt="A photo of Javier Piqueras working" />
+  </div>
+</aside>
+<article class="jp-subsection">
   <h3>A little more about me</h3>
   <main>
     Lorem ipsum dolor sit amet consectetur. Dolor iaculis semper nec feugiat.
@@ -17,9 +17,44 @@ import Arrow from "./../components/icons/Arrow.astro";
 </article>
 
 <style>
-  article {
-    width: 100%;
-    color: white;
+  div {
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    background: #ffffff1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .jp-subsection {
     width: 50%;
+  }
+  @media (max-width: 900px) {
+    .jp-subsection {
+      width: 100%;
+      align-items: center;
+      text-wrap: pretty;
+    }
+    h3 {
+      text-align: center;
+    }
+    main {
+      text-align: center;
+    }
+    aside {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  article {
+    color: white;
+    line-height: 40px;
+    text-align: justified;
+  }
+  img {
+    width: 300px;
+    border-radius: 11px;
+    margin-left: 50px;
   }
 </style>
