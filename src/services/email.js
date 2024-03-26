@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend('re_BnLTv3t8_4nfqqSdQLZ4Wz3wizXrceyTP');
 
-function sendEmail(name, address, message) {
+export function sendEmail(name, address, message) {
   sendEmailToUser(name, address, message)
   sendEmailToJavier(name, address, message)
 }
@@ -24,5 +24,3 @@ function sendEmailToJavier(name, address, message) {
     html: `<p>Name: ${name}</p><p>Email: ${address}</p><p>Message: ${message}</p>`
   })
 }
-
-sendEmail('Kenza El Alaoui', 'javierpiquerasmartinez@gmail.com', 'Hello Javier, I am interested in your portfolio. Best Regards. TES')
