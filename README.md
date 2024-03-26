@@ -16,6 +16,7 @@
 - [ ] Experience section
 - [ ] Style Title a little "About Me"
 - [ ] Form validations
+- [ ] Edit email HTML template
 
 ## 🧞 Installation
 
