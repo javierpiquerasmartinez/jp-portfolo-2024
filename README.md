@@ -14,7 +14,8 @@
 - [ ] Include Arrow in AboutMe section
 - [ ] Border curved in AboutMe section
 - [ ] Experience section
-
+- [ ] Style Title a little "About Me"
+- [ ] Form validations
 
 ## 🧞 Installation
 
