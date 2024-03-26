@@ -2,7 +2,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend('re_BnLTv3t8_4nfqqSdQLZ4Wz3wizXrceyTP');
 
-export function sendEmail(name, address, message) {
+export function sendEmail({name, address, message}) {
   sendEmailToUser(name, address, message)
   sendEmailToJavier(name, address, message)
 }
