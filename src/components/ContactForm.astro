@@ -4,21 +4,36 @@
 
 <section>
   <h4>Contact Me</h4>
-  <div>
-    <input class="jp-inputfield" type="text" placeholder="Your name" />
-    <input class="jp-inputfield" type="text" placeholder="Your address" />
-  </div>
-  <textarea
-    class="jp-inputfield"
-    name="message"
-    id="message"
-    cols="30"
-    rows="10"
-    placeholder="Your message"></textarea>
-  <div class="jp-checkbox-container">
-    <input type="checkbox" />I agree to the privacy policy
-  </div>
-  <button type="submit">Submit</button>
+  <form>
+    <div>
+      <input
+        name="name"
+        class="jp-inputfield"
+        type="text"
+        placeholder="Your name"
+        required
+      />
+      <input
+        type="email"
+        name="address"
+        class="jp-inputfield"
+        placeholder="Your address"
+        required
+      />
+    </div>
+    <textarea
+      class="jp-inputfield"
+      name="message"
+      id="message"
+      cols="30"
+      rows="10"
+      required
+      placeholder="Your message"></textarea>
+    <div class="jp-checkbox-container">
+      <input type="checkbox" />I agree to the privacy policy
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 </section>
 
 <style>
@@ -28,8 +43,13 @@
     padding: 35px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     color: #8c959f;
+    gap: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   h4 {
     margin: 0;
