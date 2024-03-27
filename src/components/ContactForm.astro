@@ -4,7 +4,7 @@
 
 <section>
   <h4>Contact Me</h4>
-  <form>
+  <form id="contact-form">
     <div>
       <input
         name="name"
@@ -35,6 +35,12 @@
     <button type="submit">Submit</button>
   </form>
 </section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+</script>
 
 <style>
   section {
