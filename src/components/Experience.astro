@@ -24,19 +24,8 @@ import ExperienceIcon from "./icons/ExperienceIcon.astro";
   .list-container {
     position: relative;
   }
-  .list-container::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 15px;
-    background: #4566857d;
-    top: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 19px;
-  }
   ul {
+    all: unset;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -44,7 +33,17 @@ import ExperienceIcon from "./icons/ExperienceIcon.astro";
   }
   /*   @media (min-width: 767px) {
     .list-container::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 15px;
+      background: #4566857d;
+      top: 0;
+      left: 0;
       right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 19px;
     }
   } */
 </style>
