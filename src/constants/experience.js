@@ -12,7 +12,7 @@ export const EXPERIENCE = [
       "As an IT Change Manager, I play a crucial role in overseeing and facilitating the implementation of changes within the IT environment of the organization. My primary responsibility is to ensure that changes to technology, processes, or systems are executed smoothly, minimizing disruptions and optimizing the overall efficiency of IT services. I collaborate with various stakeholders to assess, plan, and implement changes while adhering to established change management processes and best practices.",
   },
   {
-    date: "February 2018 - February 2019",
+    date: "September 2017 - February 2019",
     jobTitle: "Altran - Technical Expert",
     jobDescription:
       "Full Stack developer. Working as a consultant engineer for Cetelem (BNP Paribas Personal Finance), in the Auto Service Center (ASC), developing a software that manages the credits from the simulation of it until its closure. The technologies used were: - Javascript, HTML5, CSS3, NodeJS. - Java8, Maven, Spring, Hibernate. Development methodology: - SCRUM.",
