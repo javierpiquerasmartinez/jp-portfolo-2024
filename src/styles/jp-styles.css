@@ -48,6 +48,10 @@
   background: var(--intro-background);
 }
 
+.jp-aboutme {
+  background: var(--highlighted-background);
+}
+
 @media (max-width: 767px) {
   .jp-flex-row {
     flex-direction: column;

@@ -5,11 +5,18 @@
 ## TODO
 - [ ] Change logo to SVG and optimize
 - [ ] Relative paths
-- [ ] Add blur bottom of the photo
+- [x] Add blur bottom of the photo
 - [ ] Change description
 - [ ] Change colors to hex and use css variables
 - [ ] ContactForm Functionality
 - [ ] Hover in Studies Cards effect
+- [ ] Fill AboutMe section
+- [ ] Include Arrow in AboutMe section
+- [ ] Border curved in AboutMe section
+- [ ] Experience section
+- [ ] Style Title a little "About Me"
+- [ ] Form validations
+- [ ] Edit email HTML template
 
 ## 🧞 Installation
 
