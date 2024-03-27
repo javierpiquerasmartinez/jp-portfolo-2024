@@ -1,9 +1,7 @@
-<aside class="jp-subsection">
-  <div>
-    <img src="/jp-working.jpg" alt="A photo of Javier Piqueras working" />
-  </div>
+<aside>
+  <img src="/jp-working.jpg" alt="A photo of Javier Piqueras working" />
 </aside>
-<article class="jp-subsection">
+<article>
   <h3>A little more about me</h3>
   <main>
     Lorem ipsum dolor sit amet consectetur. Dolor iaculis semper nec feugiat.
@@ -17,44 +15,33 @@
 </article>
 
 <style>
-  div {
-    height: 380px;
-    width: 380px;
-    border-radius: 50%;
-    background: #ffffff1f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .jp-subsection {
-    width: 50%;
-  }
-  @media (max-width: 767px) {
-    .jp-subsection {
-      width: 100%;
-      align-items: center;
-      text-wrap: pretty;
-    }
-    h3 {
-      text-align: center;
-    }
-    main {
-      text-align: center;
-    }
-    aside {
-      display: flex;
-      justify-content: center;
-    }
+  aside {
+    width: 100%;
+    text-align: center;
   }
   article {
+    width: 100%;
+    line-height: 32px;
     color: white;
-    line-height: 40px;
-    text-align: justified;
   }
   img {
-    width: 300px;
+    width: 80%;
     border-radius: 11px;
-    margin-left: 50px;
+  }
+  main {
+    text-align: justify;
+  }
+  h3 {
+    position: relative;
+  }
+  h3::after {
+    content: "";
+    width: 100px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    border-bottom: 5px solid white;
+  }
+  @media (max-width: 767px) {
   }
 </style>
