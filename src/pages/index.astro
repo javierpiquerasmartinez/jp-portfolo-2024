@@ -7,6 +7,7 @@ import Job from "../components/Job.astro";
 import Studies from "../components/Studies.astro";
 import Contact from "../components/Contact.astro";
 import AboutMe from "../components/AboutMe.astro";
+import Experience from "../components/Experience.astro";
 
 const title =
 	"Javier Piqueras Portfolio 👨🏻‍💻 - FullStack JavaScript Web Application Software Engineer";
@@ -21,6 +22,13 @@ const description =
 		</SectionContainer>
 		<SectionContainer id="home" class="jp-flex-column">
 			<Job />
+		</SectionContainer>
+		<SectionContainer
+			id="experience"
+			class="jp-flex-column"
+			background="jp-intro"
+		>
+			<Experience />
 		</SectionContainer>
 		<SectionContainer id="aboutme" class="jp-flex-row" background="jp-aboutme">
 			<AboutMe />
