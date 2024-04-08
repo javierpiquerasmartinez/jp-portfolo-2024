@@ -1,13 +1,13 @@
 ---
 import TimeIcon from "./icons/TimeIcon.astro";
+import BNPPPFIcon from "./icons/BNPPPFIcon.astro";
 ---
 
 <li>
-  <header>{Astro.props.title}</header>
+  <header><BNPPPFIcon />{Astro.props.title}</header>
   <aside class="default-padding"><TimeIcon />{Astro.props.date}</aside>
   <main class="default-padding">{Astro.props.description}</main>
 </li>
-
 <style>
   li {
     border-radius: 15px;
@@ -26,6 +26,10 @@ import TimeIcon from "./icons/TimeIcon.astro";
     font-size: 1.4em;
     font-weight: 600;
     padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
   }
   .default-padding {
     padding-left: 12px;
